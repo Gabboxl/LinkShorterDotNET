@@ -1,0 +1,6 @@
+language: csharp
+solution: LinkShorterNET.sln
+
+script:
+ - msbuild LinkShorterNET.sln
+
