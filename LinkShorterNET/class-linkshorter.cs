@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections;
 using System.IO;
+using System.Linq;
 using System.Net;
+using System.Reflection;
 
 namespace LinkShorterNET
 {
@@ -10,10 +13,17 @@ namespace LinkShorterNET
 
         public Linkshorter(string service, string url)
         {
-            if (service == "adfly")
-            {
-                this.adfly(url);
-            }
+            
+                Type thisType = this.GetType();
+                MethodInfo theMethod = thisType.GetMethod(service);
+                
+
+            var url1 = ((IEnumerable)url).Cast<object>()
+                                   .Select(x => x == null ? x : x.ToString())
+                                   .ToArray();
+
+            theMethod.Invoke(this, url1);
+
 
         }
 
