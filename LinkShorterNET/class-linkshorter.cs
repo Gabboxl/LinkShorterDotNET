@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections;
-using System.IO;
 using System.Linq;
 using System.Net;
 using System.Reflection;
-using System.Net.Http;
 
 namespace LinkShorterNET
 {
@@ -29,38 +27,34 @@ namespace LinkShorterNET
         }
 
 
-        private string getLink()
+        private string GetLink()
         {
             return response;
         }
 
 
 
-        private void adfly(string url)
+        private void Adfly(string url)
+        {
+            string api = "http://api.adf.ly/api.php?key=3f885db2f68d068a6015d4f132bf37b8&uid=16175835&url=" + url;
+
+            using (var client = new WebClient())
+            {
+                this.response = client.DownloadString(api);
+            }
+        }
+
+
+        private void Adfocus(string url)
         {
 
-            string link = "http://api.adf.ly/api.php?key=3f885db2f68d068a6015d4f132bf37b8&uid=16175835&url=" + url;
+            string api = "http://adfoc.us/api/?key=66ebaa219a97eac02d8690addc1d8a4e&url=" + url;
 
-            WebRequest wrGETURL;  //system dot-net
-            wrGETURL = WebRequest.Create(link);
-
-            Stream objStream;  //system io
-            objStream = wrGETURL.GetResponse().GetResponseStream();
-
-            StreamReader objReader = new StreamReader(objStream);
-
-            string sLine = "";
-            int i = 0;
-
-
-
-            while (sLine != null)
+            using (var client = new WebClient())
             {
-                i++;
-                sLine = objReader.ReadLine();
-                if (sLine != null)
-                    this.response = sLine;
+                this.response = client.DownloadString(api);
             }
+
         }
 
 
