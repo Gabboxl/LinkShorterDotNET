@@ -1,6 +1,9 @@
 language: csharp
 solution: LinkShorterNET.sln
 
+before_script:
+ - nuget restore
+
 script:
  - msbuild LinkShorterNET.sln
 
