@@ -27,7 +27,7 @@ namespace LinkShorterNET
         }
 
 
-        private string GetLink()
+        public string GetLink()
         {
             return response;
         }
