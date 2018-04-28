@@ -13,7 +13,7 @@ namespace LinkShorterNET
         public Linkshorter(string service, string url)
         {
             
-                Type thisType = this.GetType();
+                System.Type thisType = this.GetType();
                 MethodInfo theMethod = thisType.GetMethod(service);
                 
 
@@ -38,7 +38,7 @@ namespace LinkShorterNET
         {
             string api = "http://api.adf.ly/api.php?key=3f885db2f68d068a6015d4f132bf37b8&uid=16175835&url=" + url;
 
-            using (var client = new WebClient())
+            using (var client = new System.Net.WebClient())
             {
                 this.response = client.DownloadString(api);
             }
@@ -50,7 +50,7 @@ namespace LinkShorterNET
 
             string api = "http://adfoc.us/api/?key=66ebaa219a97eac02d8690addc1d8a4e&url=" + url;
 
-            using (var client = new WebClient())
+            using (var client = new System.Net.WebClient())
             {
                 this.response = client.DownloadString(api);
             }
