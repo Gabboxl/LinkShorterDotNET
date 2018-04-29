@@ -10,20 +10,20 @@ namespace LinkShorterNET
     {
         private string response;
 
+            //the constructor
         public Linkshorter(string service, string url)
         {
-            
-                Type thisType = this.GetType();
-                MethodInfo theMethod = thisType.GetMethod(service);
-                
+            ArrayList urls = new ArrayList();
+            urls.Add(url);
 
-            var url1 = ((IEnumerable)url).Cast<object>()
-                                   .Select(x => x == null ? x : x.ToString())
-                                   .ToArray();
+            object[] obj = (object[])urls.ToArray(typeof(object));
 
-            theMethod.Invoke(this, url1);
+            MethodInfo mi = this.GetType().GetMethod(service);
 
-
+            //Invoke the method
+            // (null- no parameter for the method call
+            // or you can pass the array of parameters...)
+            mi.Invoke(this, obj);
         }
 
 
@@ -45,7 +45,7 @@ namespace LinkShorterNET
         }
 
 
-        private void Adfocus(string url)
+        public void Adfocus(string url)
         {
 
             string api = "http://adfoc.us/api/?key=66ebaa219a97eac02d8690addc1d8a4e&url=" + url;
