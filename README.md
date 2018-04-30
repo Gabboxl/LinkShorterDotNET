@@ -6,7 +6,8 @@ A simple C# .NET Standard library which inlcude the most link-shortener services
 
  ------------------------------------------------------
  
- #How to use
+  How to use
+ --------------
  
   To include this class in your solution/project you need to add the reference to this class:
   1) *right click* on the project in "explore solutions" on the right
@@ -27,5 +28,5 @@ A simple C# .NET Standard library which inlcude the most link-shortener services
   
   
   
-  
-  #--- coming soon
+  --------
+ -under construction-
