@@ -4,9 +4,6 @@ dist: trusty
 dotnet: 2.0.0
 mono: none
 
-before_script:
- - nuget restore
-
 script:
  - msbuild LinkShorterNET.sln
 
