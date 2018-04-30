@@ -14,7 +14,7 @@ A simple C# .NET Standard library which inlcude the most link-shortener services
   3) click on "*reference..*"
   4) go in the tab "*browse*" on the left
   5) click the button "browse" on the bottom- right
-  6) select the .dll file downloaded from here: ----- .
+  6) select the .dll file downloaded from here: https://github.com/Gabboxl/LinkShorterDotNET/releases .
   
  
  The class is very simple to use, here's an example:
