@@ -25,7 +25,7 @@ namespace LinkShorterNET
             // or you can pass the array of parameters...)
             mi.Invoke(this, obj);
         }
-
+        test error
 
         public string GetLink()
         {
