@@ -1,9 +1,9 @@
 language: csharp
 solution: LinkShorterNET.sln
-dist: trusty
-dotnet: 2.0.0
 mono: none
-
+dotnet: 2.0.0
+dist: trusty
 script:
- - msbuild LinkShorterNET.sln
-
+ - dotnet restore
+ - dotnet build
+ - dotnet test
