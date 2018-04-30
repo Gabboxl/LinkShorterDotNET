@@ -25,7 +25,7 @@ namespace LinkShorterNET
             // or you can pass the array of parameters...)
             mi.Invoke(this, obj);
         }
-        test error
+
 
         public string GetLink()
         {
@@ -36,7 +36,10 @@ namespace LinkShorterNET
 
         private void Adfly(string url)
         {
-            string api = "http://api.adf.ly/api.php?key=3f885db2f68d068a6015d4f132bf37b8&uid=16175835&url=" + url;
+            string adflykey = "3f885db2f68d068a6015d4f132bf37b8";
+            string adflyuserid = "16175835";
+
+            string api = "http://api.adf.ly/api.php?key=" + adflykey + "&uid=" + adflyuserid + "&url=" + url;
 
             using (var client = new WebClient())
             {
@@ -47,8 +50,9 @@ namespace LinkShorterNET
 
         public void Adfocus(string url)
         {
+            string adfockey = "66ebaa219a97eac02d8690addc1d8a4e";
 
-            string api = "http://adfoc.us/api/?key=66ebaa219a97eac02d8690addc1d8a4e&url=" + url;
+            string api = "http://adfoc.us/api/?key=" + adfockey + "&url=" + url;
 
             using (var client = new WebClient())
             {
