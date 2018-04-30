@@ -6,4 +6,3 @@ dist: trusty
 script:
  - dotnet restore
  - dotnet build
- - dotnet test
