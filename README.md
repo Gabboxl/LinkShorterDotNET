@@ -8,7 +8,13 @@ A simple C# .NET Standard library which inlcude the most link-shortener services
  
  #How to use
  
-  To include this class in your solution/project you need to add the reference to this class -> *right click* on the project in "explore solutions" on the right, -> add... -> reference.. -> browse-> click the button "browse" on the bottom -> select the .dll file downloaded from here: ----- .
+  To include this class in your solution/project you need to add the reference to this class:
+  1) *right click* on the project in "explore solutions" on the right
+  2) click on "*add...*"
+  3) click on "*reference..*"
+  4) go in the tab "*browse*" on the left
+  5) click the button "browse" on the bottom- right
+  6) select the .dll file downloaded from here: ----- .
   
  
  The class is very simple to use, here's an example:
