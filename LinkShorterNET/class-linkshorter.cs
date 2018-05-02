@@ -9,8 +9,11 @@ namespace LinkShorterNET
     public class Linkshorter
     {
         private string response;
+        public object error;
+        public bool hasError;
+        private object msg;
 
-            //the constructor
+        //the constructor
         public Linkshorter(string service, string url)
         {
             ArrayList urls = new ArrayList();
@@ -24,6 +27,7 @@ namespace LinkShorterNET
             // (null- no parameter for the method call
             // or you can pass the array of parameters...)
             mi.Invoke(this, obj);
+
         }
 
 
@@ -32,9 +36,13 @@ namespace LinkShorterNET
             return response;
         }
 
+        protected void SetError()
+        {
+            this.error = msg;
+            this.hasError = true;
+        }
 
-
-        private void Adfly(string url)
+        protected void Adfly(string url)
         {
             string adflykey = "3f885db2f68d068a6015d4f132bf37b8";
             string adflyuserid = "16175835";
@@ -48,7 +56,7 @@ namespace LinkShorterNET
         }
 
 
-        public void Adfocus(string url)
+        protected void Adfocus(string url)
         {
             string adfockey = "66ebaa219a97eac02d8690addc1d8a4e";
 
