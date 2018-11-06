@@ -22,7 +22,7 @@ A simple C# .NET Standard library which inlcude the most link-shortener services
  
  `using LinkShorterNET;`
  
- `Linkshorter test = new Linkshorter("Adfocus", "https://gabboxl.ga"); `  <-- we call the constructor, in this case we will use the *Adfocus* service.
+ `Linkshorter test = new Linkshorter("Adfocus", "https://gabboxl.ga"); `  <-- we call the constructor, in this example we will use the *Adfocus* service.
  
   `return test.GetLink(); ` <-- we get the link shorten with the *GetLink()* method.
   
