@@ -1,4 +1,4 @@
-# LinkShorter.NET [![Build Status](https://travis-ci.org/Gabboxl/LinkShorterDotNET.svg?branch=master)](https://travis-ci.org/Gabboxl/LinkShorterDotNET) [![Build status](https://ci.appveyor.com/api/projects/status/x4226952m4234033?svg=true)](https://ci.appveyor.com/project/Gabboxl/linkshorterdotnet) [![StyleCI](https://styleci.io/repos/128944187/shield?branch=master)](https://styleci.io/repos/128944187)
+# LinkShorter.NET [![Build Status](https://travis-ci.org/Gabboxl/LinkShorterDotNET.svg?branch=master)](https://travis-ci.org/Gabboxl/LinkShorterDotNET) [![Build status](https://ci.appveyor.com/api/projects/status/x4226952m4234033?svg=true)](https://ci.appveyor.com/project/Gabboxl/linkshorterdotnet) [![StyleCI](https://styleci.io/repos/128944187/shield?branch=master)](https://styleci.io/repos/128944187) [![GitHub release](https://img.shields.io/github/release/Gabboxl/LinkShorterDotNET/all.svg)](https://github.com/Gabboxl/LinkShorterDotNET/releases)
 A simple C# .NET Standard library which inlcude the most link-shortener services.
 
 
