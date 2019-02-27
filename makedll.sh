@@ -1,3 +1,4 @@
+#!/bin/bash -e
 dotnet restore
 dotnet build -c release
 
