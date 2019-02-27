@@ -5,8 +5,8 @@ dotnet build -c release
 cd ..
 
 eval "$(ssh-agent -s)"
-echo "$private_key"
 echo -e "$private_key" > travis_rsa
+pass ""
 chmod 600 travis_rsa
 ssh-add travis_rsa
 
