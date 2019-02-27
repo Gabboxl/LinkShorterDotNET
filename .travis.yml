@@ -4,4 +4,4 @@ mono: none
 dotnet: 2.1.502
 dist: xenial
 script:
-- makedll.sh
+- ./makedll.sh
