@@ -1,8 +1,8 @@
 language: csharp
 solution: LinkShorterNET.sln
 mono: none
-dotnet: 2.0.0
+dotnet: latest
 dist: trusty
 script:
  - dotnet restore
- - dotnet build
+ - dotnet build -c release
