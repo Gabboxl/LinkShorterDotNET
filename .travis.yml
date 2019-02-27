@@ -4,5 +4,4 @@ mono: none
 dotnet: 2.1.502
 dist: xenial
 script:
- - dotnet restore
- - dotnet build -c release
+- makedll.sh
