@@ -2,7 +2,7 @@ language: csharp
 solution: LinkShorterNET.sln
 mono: none
 dotnet: 2.1.502
-dist: xenial
+dist: trusty
 before_install:
   - chmod +x makedll.sh
 script:
