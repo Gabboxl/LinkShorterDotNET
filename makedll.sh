@@ -6,7 +6,6 @@ cd ..
 
 eval "$(ssh-agent -s)"
 echo -e "$private_key" > travis_rsa
-pass ""
 chmod 600 travis_rsa
 ssh-add travis_rsa
 
