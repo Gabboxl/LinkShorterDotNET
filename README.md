@@ -1,4 +1,5 @@
 # LinkShorter.NET [![Build Status](https://travis-ci.org/Gabboxl/LinkShorterDotNET.svg?branch=master)](https://travis-ci.org/Gabboxl/LinkShorterDotNET) [![Build status](https://ci.appveyor.com/api/projects/status/x4226952m4234033?svg=true)](https://ci.appveyor.com/project/Gabboxl/linkshorterdotnet) [![GitHub release](https://img.shields.io/github/release/Gabboxl/LinkShorterDotNET/all.svg)](https://github.com/Gabboxl/LinkShorterDotNET/releases)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FGabboxl%2FLinkShorterDotNET.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FGabboxl%2FLinkShorterDotNET?ref=badge_shield)
 A simple C# .NET Standard library which inlcude the most link-shortener services.
 
 
@@ -30,3 +31,7 @@ A simple C# .NET Standard library which inlcude the most link-shortener services
   
   --------
  -under construction-
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FGabboxl%2FLinkShorterDotNET.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FGabboxl%2FLinkShorterDotNET?ref=badge_large)
